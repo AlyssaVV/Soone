@@ -1,7 +1,14 @@
 # Soone
+经数月打磨，前置准入平台正式上线和大家见面。我们不研发 C2、也不搬运 C2，只为所有C2提供一个安全可靠的伙伴；我们将沙箱对抗与调试对抗融为一体，为所有 C2 提供优秀的stager，让每一款 C2 都能专注深耕 Beacon 核心研发，告别那些重复繁杂操蛋的工作。
+对平台不再做过多的赘述，Linux 端目前暂未进行深度技术打磨，仅完成基础接入适配。因 Windows 汇编编译的客户端免杀表现稳定，暂不提供直接编译好的PE文件，仅提供 shellcode 供使用。PE2shellcode我推荐文末当中的两个项目，当然有自己转换项目只要是反射的都可以。
+从最初 Python 简易服务端搭建，到 Python 重构实现架构结构化，再到Go 语言全栈重构，现已实现多平台适配，整体兼容性表现优异。客户端兼容覆盖 Windows 7、WinServer 至 Windows 11 全系列系统。历经团队大量实测迭代、持续优化与漏洞修复，最终打磨出当前稳定可用版本。因团队人力有限，暂无法做到尽善尽美，若存在不足与疏漏之处，还望各位多多包涵。欢迎大家积极反馈问题与建议，我们将持续迭代优化、完善升级。
+觉得还行的老板点个star
+
+
+
 前置准入平台（Pre-access platform），支持 Windows 二进制 Shellcode 客户端与 Linux ELF 客户端，提供 Web 管理界面、沙箱智能检测、UUID 白名单管控及长轮询任务下发等功能。
 
-### 运行
+### 使用
 
 ```bash
 ./Soone
@@ -47,3 +54,20 @@ apk add gcc musl-dev zig
 
 https://wiki.chainreactors.red/malefic/getting-started/components/srdi/
 https://github.com/onedays12/Convert2Shellcode/
+
+
+
+
+免责声明
+本项目仅用于网络安全技术的学习研究，若使用者在使用本项目的过程中存在任何违法行为或造成任何不良影响，由使用者自行承担全部法律责任，与项目作者无关。 
+开发者及发布者不对因使用本工具造成的任何直接或间接损失、数据泄露、业务中断、法律纠纷或其他后果承担责任。请勿将本项目用于任何商业用途，仅供学习交流。 
+本人不参加各类攻防演练以及境内外渗透项目，如溯源到本人id或者项目，纯属巧合。
+使用本工具即表示您已阅读、理解并同意承担全部风险与责任。
+
+年年岁岁花相似 岁岁年年人不同
+
+**致谢&参考**
+https://wiki.chainreactors.red/malefic/getting-started/components/srdi/
+https://github.com/onedays12/Convert2Shellcode/
+https://github.com/fdx-xdf
+https://github.com/badboycxcc
